@@ -2,7 +2,7 @@
 
 ## How to use this GIT
 
-You can include this GIT into your Ansible Tower to config L2-Interfaces
+You can include this GIT into your Ansible Tower to config SNMP communities
 
 #### Instructions
 
