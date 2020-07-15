@@ -1,6 +1,6 @@
 ---
 - name: snmp ro/rw string configuration
-  hosts: switches
+  hosts: prod_switches
   gather_facts: no
   vars:
     readonlycom: rocom
@@ -10,5 +10,5 @@
     - name: ensure snmp strings are present
       ios_config:
         lines:
-          - snmp-server community {{ readonlycom }} RO
-          - snmp-server community {{ readwritecom }} RW
+          - snmp-server community "{{ readonlycom }}" RO
+          - snmp-server community "{{ readwritecom }}" RW
