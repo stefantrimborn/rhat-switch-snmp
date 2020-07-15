@@ -3,12 +3,12 @@
   hosts: switches
   gather_facts: no
   vars:
-    ro-com: rocom
-    rw-com: rwcom
+    readonlycom: rocom
+    readwritecom: rwcom
 
   tasks:
     - name: ensure snmp strings are present
       ios_config:
         lines:
-          - snmp-server community {{ ro-com }} RO
-          - snmp-server community {{ rw-com }} RW
+          - snmp-server community {{ readonlycom }} RO
+          - snmp-server community {{ readonlycom }} RW
