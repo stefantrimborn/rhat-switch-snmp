@@ -11,4 +11,4 @@
       ios_config:
         lines:
           - snmp-server community {{ readonlycom }} RO
-          - snmp-server community {{ readonlycom }} RW
+          - snmp-server community {{ readwritecom }} RW
