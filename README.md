@@ -1,4 +1,4 @@
-# Config L2-Interfaces
+# Config SNMP-Communities
 
 ## How to use this GIT
 
